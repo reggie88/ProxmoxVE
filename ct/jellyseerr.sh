@@ -52,7 +52,7 @@ function update_script() {
 
     if ! command -v pnpm &> /dev/null; then
         msg_error "pnpm not found. Installing..."
-        npm install -g pnpm &>/dev/null
+        npm install -g pnpm@9.15.5 &>/dev/null
     else
         msg_ok "pnpm is already installed."
     fi
